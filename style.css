@@ -1,0 +1,174 @@
+
+
+
+
+body{
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #242424;
+
+}
+
+
+.wrapper{
+    width:95%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: rgba(255, 0, 0, 0.63);
+    position: relative;
+    text-align: center;
+    border-radius: 5px;
+    
+}
+
+header p {
+    margin-top: 0px;
+    padding-bottom: 1em;
+}
+
+h1{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+ 
+.logo {
+    display: inline;
+    max-height: 5em;
+    max-height: 80px;
+    
+   
+}
+/* animation for header */
+.header{
+    animation-name: headd;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+
+@keyframes headd {
+    0%{top: -300px; opacity: 0; }
+    50%{opacity: .2;}
+    100%{top:10px; opacity : 1;}
+}
+
+
+/* animation for header */
+
+
+/* navigation part */
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 2.5em;
+}
+.list-item{
+    list-style: none;
+    /* padding: 0 1em  ; */
+    
+
+}
+nav a{
+    text-decoration:none;
+    color: cornsilk;
+}
+
+
+/* navigation part */
+
+img{
+    max-width: 100%;
+
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em 0;
+}
+
+.img-col{
+    background-color: rgba(255, 0, 0, 0.63);
+    width: 35%;
+}
+
+.txt-col{
+    background-color: rgba(255, 0, 0, 0.63);
+    width: 55% ; 
+    
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-form{
+    width: 30%;
+    background-color: rgba(255, 0, 0, 0.63);
+    line-height: 2em;
+    text-align: center;
+}
+
+.adress{
+    width: 65%;
+    background-color: rgba(255, 0, 0, 0.63);
+    text-align: start;
+}
+
+
+
+
+
+
+@media(max-width: 500px){
+
+
+
+.container{
+    flex-direction: column;
+    text-align: center;
+}
+
+.img-col{
+    width: 80%;
+    margin: 2em 0;
+    background-color: transparent;
+}
+
+.txt-col{
+    width: 95%;
+    border-radius: 20px;
+    color: silver;
+}
+
+.container img {
+    border-radius: 20px;
+}
+
+.reverse{
+    flex-direction: column-reverse;
+}
+
+.discription{
+    color: skyblue;
+}
+
+.adress{
+    border-radius: 20px;
+}
+
+.contact-form{
+    border-radius: 20px;
+
+}
+
+}
